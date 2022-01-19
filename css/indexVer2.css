@@ -39,11 +39,30 @@
 }
 
 .header nav ul li {
+  position: relative;
   list-style: none;
   background-color: #fff;
   display: block;
-  padding: 20px;
+  padding: 20px 0;
   text-align: center;
+}
+
+.header nav ul li .subs {
+  position: relative;
+  top: 100%;
+  left: 0;
+}
+
+.header nav ul li .subs li {
+  background-color: #f7f2c2;
+}
+
+.header nav ul li .subs li a {
+  font-size: 25px;
+}
+
+.header nav ul li .subs li:hover {
+  background-color: #fff;
 }
 
 .header nav ul li:hover {
@@ -54,7 +73,7 @@
   text-decoration: none;
   margin: 20px;
   color: black;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .header nav ul.active {
@@ -119,24 +138,40 @@
   .header nav .logo {
     margin-top: 20px;
   }
-  .header nav ul {
+  .header nav .menu {
     position: static;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-top: 0;
   }
-  .header nav ul li {
-    position: static;
+  .header nav .menu li {
+    position: relative;
     font-size: 20px;
     background-color: transparent;
-    padding: 0;
+    padding: 5;
   }
-  .header nav ul li:hover {
+  .header nav .menu li .subs {
+    position: absolute;
+  }
+  .header nav .menu li .subs li {
+    background-color: #3c523f;
+    padding: 5px;
+  }
+  .header nav .menu li .subs li a {
+    font-size: 23px;
+  }
+  .header nav .menu li .subs li a:hover {
+    color: #3c523f;
+  }
+  .header nav .menu li .subs li:hover {
+    background-color: #81a785;
+  }
+  .header nav .menu li:hover {
     background-color: #698f6d;
   }
-  .header nav ul li a {
-    font-size: 20px;
+  .header nav .menu li a {
+    font-size: 28px;
     color: #f7f2c2;
   }
   .header nav .fa-bars {
@@ -168,4 +203,4 @@
     font-weight: 100;
   }
 }
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=indexVer2.css.map */

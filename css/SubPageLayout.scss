@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+.header {
+    position: relative;
+    width: 100%;    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #698f6d;
+        .logo {
+            margin: 20px;
+        }
+        ul {
+            position: absolute;
+            z-index: 10;
+            top: 120px;
+            left: 100%;
+            right: 0;
+            li {
+                list-style: none;
+                background-color: #f7f2c2;
+                display: block;
+                padding: 20px;
+                text-align: center;
+                &:hover {
+                    background-color: #698f6d;
+                    a {
+                        color: #f7f2c2;
+                    }
+                }
+                a {
+                    text-decoration: none;
+                    margin: 20px;
+                    color: black;
+                    font-size: 30px;                  
+                }
+            }
+            &.active {
+                left: 0;
+            }
+        }
+        .fa-bars {
+            font-size: 60px;
+            margin: 20px;
+            cursor: pointer;
+        }
+    }
+}
+
+@media all and (min-width: 1300px) {
+    .header {
+        nav {
+            padding: 0 80px;
+            display: flex;
+            .logo {
+                margin-top: 20px;
+            }
+            ul {
+                position: static;
+                display: flex;
+                margin-top: 0;
+                li {
+                    position: static;
+                    text-align: center;
+                    background-color: transparent;
+                    padding: 0;
+                    a {
+                        font-size: 25px;
+                        color: #f7f2c2;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            .fa-bars {
+                display: none;
+            }
+        }
+    }
+}
