@@ -20,9 +20,9 @@
         ul {
             position: absolute;
             z-index: 10;
-            top: 120px;
-            left: 100%;
-            right: 0;
+            top: 100%;
+            left: -100%;
+            right: 100%;
             li {
                 position: relative;
                 list-style: none;
@@ -56,6 +56,7 @@
             }
             &.active {
                 left: 0;
+                right: 0;
             }
         }
         .fa-bars {
@@ -75,17 +76,20 @@
             .logo {
                 margin-top: 20px;
             }
-            .menu {
+            ul {
                 position: static;
                 display: flex;
                 margin-top: 0;
+                left: 0;
+                right: 0;
                 li {
                     position: relative;
                     font-size: 20px;
                     background-color: transparent;
-                    padding: 5;
+                    padding: 5px;
                     .subs {
                         position: absolute;
+                        display: block;
                         li {
                             background-color: #3c523f;
                             padding: 5px;

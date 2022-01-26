@@ -30,9 +30,9 @@
 .header nav ul {
   position: absolute;
   z-index: 10;
-  top: 120px;
-  left: 100%;
-  right: 0;
+  top: 100%;
+  left: -100%;
+  right: 100%;
 }
 
 .header nav ul li {
@@ -75,6 +75,7 @@
 
 .header nav ul.active {
   left: 0;
+  right: 0;
 }
 
 .header nav .fa-bars {
@@ -93,39 +94,42 @@
   .header nav .logo {
     margin-top: 20px;
   }
-  .header nav .menu {
+  .header nav ul {
     position: static;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-top: 0;
+    left: 0;
+    right: 0;
   }
-  .header nav .menu li {
+  .header nav ul li {
     position: relative;
     font-size: 20px;
     background-color: transparent;
-    padding: 5;
+    padding: 5px;
   }
-  .header nav .menu li .subs {
+  .header nav ul li .subs {
     position: absolute;
+    display: block;
   }
-  .header nav .menu li .subs li {
+  .header nav ul li .subs li {
     background-color: #3c523f;
     padding: 5px;
   }
-  .header nav .menu li .subs li a {
+  .header nav ul li .subs li a {
     font-size: 23px;
   }
-  .header nav .menu li .subs li a:hover {
+  .header nav ul li .subs li a:hover {
     color: #3c523f;
   }
-  .header nav .menu li .subs li:hover {
+  .header nav ul li .subs li:hover {
     background-color: #81a785;
   }
-  .header nav .menu li:hover {
+  .header nav ul li:hover {
     background-color: #698f6d;
   }
-  .header nav .menu li a {
+  .header nav ul li a {
     font-size: 28px;
     color: #f7f2c2;
   }

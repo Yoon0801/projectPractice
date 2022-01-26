@@ -20,7 +20,7 @@
         ul {
             position: absolute;
             z-index: 10;
-            top: 120px;
+            top: 100%;
             left: 100%;
             right: 0;
             li {
@@ -115,4 +115,34 @@
             }
         }
     }
+}
+
+.rescueList {
+    .searchNav {
+        border-bottom: 1px solid black;
+    }
+    .box {
+        .ListContent {
+            .card {      
+                .pic {
+                    height: 100%;
+                    width: 100%;
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                        overflow: hidden;
+                    }
+                }
+                a {
+                    text-align: right;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.mb-10 {
+    margin-bottom: 10px;
 }
