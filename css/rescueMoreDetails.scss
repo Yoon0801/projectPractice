@@ -121,21 +121,45 @@
 
 .moreDetails {
     .pic {
-        height: auto;
-        width: 500px;
+        height: 100%;
+        width: 100%;
         img {
-            height: 100%;
-            width: 80%;
+            height: 50%;
+            width: 50%;
             object-fit: cover;
         }
     }
     .details {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
         .content {
-            width: auto;
-            padding-left: 50px;
+            font-size: 20px;           
             .title {
                 display: inline;
                 font-size: 50px;
+                margin-right: 20px;
+            }
+            .species {
+                font-size: 40px;
+                color: #81a785;
+            }
+            .progressing {
+                width: 100%;
+                border: 1px solid black;
+                .messagebox {
+                    background-color: rgb(190, 190, 190);
+                    height: 200px;
+                    padding: 10px;
+                }
+                .sendmessage {
+                    padding: 20px;
+                    .submit {
+                        
+                    }
+                }
             }
         }
     }

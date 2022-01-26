@@ -107,7 +107,7 @@
     position: relative;
     font-size: 20px;
     background-color: transparent;
-    padding: 5;
+    padding: 5px;
   }
   .header nav ul li .subs {
     position: absolute;
@@ -139,24 +139,59 @@
 }
 
 .moreDetails .pic {
-  height: auto;
-  width: 500px;
+  height: 100%;
+  width: 100%;
 }
 
 .moreDetails .pic img {
-  height: 100%;
-  width: 80%;
+  height: 50%;
+  width: 50%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
+.moreDetails .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .moreDetails .details .content {
-  width: auto;
-  padding-left: 50px;
+  font-size: 20px;
 }
 
 .moreDetails .details .content .title {
   display: inline;
   font-size: 50px;
+  margin-right: 20px;
+}
+
+.moreDetails .details .content .species {
+  font-size: 40px;
+  color: #81a785;
+}
+
+.moreDetails .details .content .progressing {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.moreDetails .details .content .progressing .messagebox {
+  background-color: #bebebe;
+  height: 200px;
+  padding: 10px;
+}
+
+.moreDetails .details .content .progressing .sendmessage {
+  padding: 20px;
 }
 /*# sourceMappingURL=rescueMoreDetails.css.map */
