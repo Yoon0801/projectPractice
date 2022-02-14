@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/TransferMoreDetails.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+    <!-- More Details Section -->
+    <section class="moreDetails">
+        <div class="transferContainer">
+            <div class="img col-sm-12 col-md-6">
+                <img src="img/10.jpg">
+            </div>
+            <div class="details col-sm-12 col-md-6">
+                <div class="content">
+                    <div class="transfercol">
+                        <label for="">他的種族：<p class="transferSpecies">狗</p></label>
+                    </div>
+                    <div class="transfercol">
+                        <!-- @Html.DisplayFor(model => model.TransferName) -->
+                        <label for="">他叫做：</label><p class="transferName ">布丁</p>
+                    </div>
+                    <div class="transfercol">
+                        <label for="" class="TransferDone">案件狀態：</label><p class="transferdon">未結案</p>
+                        <!-- @Html.DisplayFor(model => model.TransferDone) -->
+                    </div>
+
+
+                    <div class="transfercol">
+                        <label for="">他目前住在：<p class="transferPosition ">台北市</p><p
+                                class="transferPosition  ">大安區</p></label>
+                        <!-- @Html.DisplayFor(model => model.tPosition.positionPosition)@Html.DisplayFor(model => model.tPosition1.positionPosition) -->
+                    </div>
+                    <div class="transfercol">
+                        <label for="">他現在的狀況：
+                            <p class="transferSituation 3">身體健康良好，無白血愛滋。</p>
+                        </label>
+                        <!-- @Html.DisplayFor(model => model.TransferSituation) -->
+                    </div>
+                    <div class="transfercol">
+                        <label for="">認養條件：
+                            <p class="transferRequest">成年，經濟獨立。<br>有一些貸款一大情緒清除地方他是方面演出顯示，瞬間士兵一家此刻家族股市，之一營銷，休閒一個授權有限廠商，安裝專業確實動物，四周威脅五年固定諾基亞化工，完美士兵走勢意大利預測魯蛇你怎不來中間手術賓館是怎麼總經理，此外女士相信和諧有一定環境實際舉辦主演推坑大魔。</p>
+                        </label>
+                        <!-- @Html.DisplayFor(model => model.TransferRequest) -->
+                    </div>
+                    <div class="transfercol">
+                        <label for="">他的性別：<p class="transferGender ">公</p></label>
+                        <!-- @Html.DisplayFor(model => model.TransferGender) -->
+                    </div>
+                    <div class="transfercol">
+                        <label for="">結紮了沒：<p class="transferNeuter ">結紮了</p></label>
+                        <!-- @Html.DisplayFor(model => model.TransferNeuter) -->
+                    </div>
+                    <button class="showTxt btn btn-primary">我想認養</button>
+                    <div class="transfercol contactinfo">
+                        <label for="">聯絡人：<p class="transferContactPerson ">李先生</p></label>
+                        <!-- @Html.DisplayFor(model => model.TransferContactPerson) -->
+                    </div>
+                    <div class="transfercol contactinfo">
+                        <label for="">聯絡方式：<p class="transferContactWay">手機 0912712712</p></label>
+                        <!-- @Html.DisplayFor(model => model.TransferContactWay) -->
+                    </div>
+                </div>
+                <div class="btn d-flex justify-content-between">
+                    <div class="user">
+                        <input type="submit" value="編輯" class="btn btn-warning">
+                        <input type="submit" value="刪除" class="btn btn-danger">
+                    </div>
+                    <div class="viewer">
+                        <a href="#">回到清單</a>
+                    </div>
+        
+                </div>
+            </div>
+            
+        </div>
+        
+    </section>
+
+    <script src="js/transferMoreDetails.js"></script>
+</body>
+
+</html>
