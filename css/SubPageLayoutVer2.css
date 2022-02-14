@@ -11,7 +11,7 @@
 }
 
 .header nav {
-  background-color: #698f6d;
+  background-color: #cee5d0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,23 +114,32 @@
     display: block;
   }
   .header nav ul li .subs li {
-    background-color: #3c523f;
+    background-color: #cee5d0;
     padding: 5px;
   }
   .header nav ul li .subs li a {
     font-size: 23px;
   }
   .header nav ul li .subs li a:hover {
-    color: #3c523f;
+    color: #f7f2c2;
   }
   .header nav ul li .subs li:hover {
-    background-color: #81a785;
+    background-color: #3c523f;
+  }
+  .header nav ul li .subs li:hover a {
+    color: #f7f2c2;
   }
   .header nav ul li:hover {
-    background-color: #698f6d;
+    background-color: #3c523f;
+  }
+  .header nav ul li:hover > a {
+    color: #f7f2c2;
   }
   .header nav ul li a {
     font-size: 28px;
+    color: #2b6954;
+  }
+  .header nav ul li a:hover {
     color: #f7f2c2;
   }
   .header nav .fa-bars {

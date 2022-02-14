@@ -10,7 +10,7 @@
     position: relative;
     width: 100%;
     nav {
-        background-color: #698f6d;
+        background-color: #cee5d0;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -67,7 +67,6 @@
     }
 }
 
-
 @media all and (min-width: 1300px) {
     .header {
         nav {
@@ -91,26 +90,34 @@
                         position: absolute;
                         display: block;
                         li {
-                            background-color: #3c523f;
+                            background-color: #cee5d0;
                             padding: 5px;
                             a {
                                 font-size: 23px;
                                 &:hover {
-                                    color: #3c523f;
+                                    color: #f7f2c2;
                                 }
-                                
                             }
                             &:hover {
-                                background-color: #81a785;
+                                background-color: #3c523f;
+                                a {
+                                    color: #f7f2c2;
+                                }
                             }
                         }
                     }
                     &:hover {
-                        background-color: #698f6d;
+                        background-color: #3c523f;
+                        >a {
+                            color: #f7f2c2;
+                        }
                     }
                     a {
                         font-size: 28px;
-                        color: #f7f2c2;
+                        color: #2b6954;
+                        &:hover {
+                            color: #f7f2c2;
+                        }
                     }
                 }
             }

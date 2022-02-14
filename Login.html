@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome 的 icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bs 的 icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <!-- bs 本身 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/Login.css">
+</head>
+
+<body>
+
+    <section>
+        <div class="container">
+            <div class="user signinBox">                
+                <div class="formBox">
+                    <form action="">
+                        <h2>登入</h2>
+                        <input type="text" placeholder="Email">
+                        <input type="password" placeholder="密碼">
+                        <input type="submit" value="登入">
+                        <p class="signup">尚未註冊？</p>
+                        <p class="change">註冊</p>
+                    </form>
+                </div>
+                <div class="imgBox"><img src="img/1.jpg" alt=""></div>
+            </div>
+
+            <div class="user signupBox">
+                <div class="imgBox"><img src="img/2.jpg" alt=""></div>
+                <div class="formBox">
+                    <form action="">
+                        <h2>註冊</h2>
+                        <input type="text" placeholder="會員姓名">
+                        <input type="text" placeholder="Email">
+                        <input type="password" placeholder="密碼">
+                        <input type="submit" value="註冊">
+                        <p class="signup">已有帳號？</p>
+                        <p class="change">登入</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/Login.js"></script>
+    <!-- bs 本身 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

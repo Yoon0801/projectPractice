@@ -11,7 +11,7 @@
 }
 
 .header nav {
-  background-color: #698f6d;
+  background-color: #cee5d0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,6 +83,71 @@
   cursor: pointer;
 }
 
+.rescueList .searchNav form h4 {
+  margin: 20px;
+  margin-bottom: 0;
+}
+
+.rescueList .searchNav form .dropdownstyle {
+  position: relative;
+  width: 6em;
+  height: 3em;
+  line-height: 3;
+  background: #f7f2c2;
+  overflow: hidden;
+  border-radius: 0.25em;
+  margin: 20px;
+  padding: 5px;
+}
+
+.rescueList .searchNav form .searchBtn {
+  width: 100px;
+  padding: 5px;
+  border: none;
+  background-color: #3c523f;
+  color: #b8ceba;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.rescueList .box .ListContent .card .title .trackBtn {
+  padding: 0 20px;
+  border: none;
+  border-radius: 10%;
+  background-color: #bed4c0;
+  color: #3c523f;
+  cursor: pointer;
+}
+
+.rescueList .box .ListContent .card .pic {
+  height: 440px;
+  width: auto;
+}
+
+.rescueList .box .ListContent .card .pic img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
+.rescueList .box .ListContent .card a {
+  text-align: right;
+  text-decoration: none;
+}
+
+.rescueList .box .ListContent .card .content .event {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
 @media all and (min-width: 1300px) {
   .header nav {
     padding: 0 30px;
@@ -110,17 +175,17 @@
     position: absolute;
   }
   .header nav .menu li .subs li {
-    background-color: #3c523f;
+    background-color: #cee5d0;
     padding: 5px;
   }
   .header nav .menu li .subs li a {
     font-size: 23px;
   }
   .header nav .menu li .subs li a:hover {
-    color: #3c523f;
+    color: #f7f2c2;
   }
   .header nav .menu li .subs li:hover {
-    background-color: #81a785;
+    background-color: #698f6d;
   }
   .header nav .menu li:hover {
     background-color: #698f6d;
@@ -132,31 +197,5 @@
   .header nav .fa-bars {
     display: none;
   }
-}
-
-.rescueList .searchNav {
-  border-bottom: 1px solid black;
-}
-
-.rescueList .box .ListContent .card .pic {
-  height: 100%;
-  width: 100%;
-}
-
-.rescueList .box .ListContent .card .pic img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  overflow: hidden;
-}
-
-.rescueList .box .ListContent .card a {
-  text-align: right;
-  text-decoration: none;
-}
-
-.mb-10 {
-  margin-bottom: 10px;
 }
 /*# sourceMappingURL=RescueList.css.map */

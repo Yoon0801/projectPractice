@@ -10,7 +10,7 @@
     position: relative;
     width: 100%;
     nav {
-        background-color: #698f6d;
+        background-color: #cee5d0;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -66,6 +66,81 @@
     }
 }
 
+.rescueList {
+    .searchNav {
+        form {
+            h4 {
+                margin: 20px;
+                margin-bottom: 0;
+            }
+            .dropdownstyle {
+                position: relative;
+                // display: flex;
+                width: 6em;
+                height: 3em;
+                line-height: 3;
+                background: #f7f2c2;
+                overflow: hidden;
+                border-radius: 0.25em;
+                margin: 20px;
+                // text-align: center;
+                padding: 5px;
+                // letter-spacing: 2px;
+            }
+            .searchBtn {
+                width: 100px;
+                padding: 5px;
+                border: none;
+                background-color: #3c523f;
+                color: #b8ceba;
+                border-radius: 10px;
+                font-size: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+    .box {
+        .ListContent {
+            .card {
+                .title {
+                    .trackBtn {
+                        padding: 0 20px;
+                        border: none;
+                        border-radius: 10%;
+                        background-color: #bed4c0;
+                        color: #3c523f;
+                        cursor: pointer;
+                    }
+                }
+                .pic {
+                    height: 440px;
+                    width: auto;
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                        overflow: hidden;
+                    }
+                }
+                a {
+                    text-align: right;
+                    text-decoration: none;
+                }
+                .content {
+                    .event {
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
 
 @media all and (min-width: 1300px) {
     .header {
@@ -87,17 +162,16 @@
                     .subs {
                         position: absolute;
                         li {
-                            background-color: #3c523f;
+                            background-color: #cee5d0;
                             padding: 5px;
                             a {
                                 font-size: 23px;
                                 &:hover {
-                                    color: #3c523f;
+                                    color: #f7f2c2;
                                 }
-                                
                             }
                             &:hover {
-                                background-color: #81a785;
+                                background-color: #698f6d;
                             }
                         }
                     }
@@ -115,34 +189,4 @@
             }
         }
     }
-}
-
-.rescueList {
-    .searchNav {
-        border-bottom: 1px solid black;
-    }
-    .box {
-        .ListContent {
-            .card {      
-                .pic {
-                    height: 100%;
-                    width: 100%;
-                    img {
-                        height: 100%;
-                        width: 100%;
-                        object-fit: cover;
-                        overflow: hidden;
-                    }
-                }
-                a {
-                    text-align: right;
-                    text-decoration: none;
-                }
-            }
-        }
-    }
-}
-
-.mb-10 {
-    margin-bottom: 10px;
 }

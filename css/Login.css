@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+section {
+  position: relative;
+  min-height: 100vh;
+  background: #f3f0d7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+section .container {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  background: #fff;
+  -webkit-box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+section .container .user {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section .container .user .imgBox {
+  display: none;
+  position: relative;
+  width: 50%;
+  height: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+section .container .user .imgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section .container .user .formBox {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  background: #cee5d0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+section .container .user .formBox h2 {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+section .container .user .formBox input {
+  width: 100%;
+  padding: 10px;
+  background: #f5f5f5;
+  color: #333;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 14px;
+  margin: 8px 0;
+  letter-spacing: 1px;
+  font-weight: 300;
+  border-radius: 10px;
+}
+
+section .container .user .formBox input[type="submit"] {
+  max-width: 100px;
+  background: #527055;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+section .container .user .formBox .signup {
+  position: relative;
+  margin-top: 20px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #555;
+  font-weight: 500;
+}
+
+section .container .user .formBox .change {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #62b46a;
+  font-weight: 500;
+}
+
+section .container .user .formBox.active {
+  background: #f3f0d7;
+}
+
+section .container .signupBox {
+  pointer-events: none;
+}
+
+section .container .signupBox .formBox {
+  top: 100%;
+}
+
+section .container .signupBox .imgBox {
+  top: -100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+section .container .signinBox .formBox {
+  top: 0;
+}
+
+section .container .signinBox .imgBox {
+  top: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+section .container.active .signupBox {
+  pointer-events: initial;
+}
+
+section .container.active .signupBox .formBox {
+  top: 0;
+}
+
+section .container.active .signupBox .imgBox {
+  top: 0;
+}
+
+section .container.active .signinBox .formBox {
+  top: 100%;
+}
+
+section .container.active .signinBox .imgBox {
+  top: -100%;
+}
+
+section.active {
+  background: #cee5d0;
+}
+
+@media all and (min-width: 1300px) {
+  section .container {
+    width: 800px;
+  }
+  section .container .user .formBox {
+    width: 50%;
+  }
+  section .container .user .imgBox {
+    display: inline;
+  }
+}
+/*# sourceMappingURL=Login.css.map */

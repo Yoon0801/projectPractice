@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #cee5d0;
+}
+
+.searchNav {
+  border-bottom: 1px solid black;
+}
+
+.searchNav form h4 {
+  margin: 20px;
+  margin-bottom: 0;
+}
+
+.searchNav form .dropdownstyle {
+  position: relative;
+  width: 6em;
+  height: 3em;
+  line-height: 3;
+  background: #f7f2c2;
+  overflow: hidden;
+  border-radius: 0.25em;
+  margin: 20px;
+  padding: 5px;
+}
+
+.searchNav form .searchBtn {
+  width: 100px;
+  padding: 5px;
+  border: none;
+  background-color: #3c523f;
+  color: #b8ceba;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.containerSelf {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.containerSelf .card {
+  position: relative;
+  margin: 30px 20px;
+  padding: 20px 15px;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.containerSelf .card:hover .content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: 20px;
+}
+
+.containerSelf .card .imgBox {
+  position: relative;
+  width: auto;
+  height: 25rem;
+  z-index: 1;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.containerSelf .card .imgBox img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
+.containerSelf .card .content {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.containerSelf .card .content a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=TransferCard.css.map */

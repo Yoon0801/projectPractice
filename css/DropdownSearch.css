@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  list-style: none;
+}
+
+body {
+  background: #ee9191;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.wrapper .searchBox {
+  width: 200px;
+  background: #fff;
+  height: 65px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0 8px 6px -10px #b3c6ff;
+          box-shadow: 0 8px 6px -10px #b3c6ff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .fa-search {
+  font-size: 30px;
+}
+
+.wrapper .dropdown {
+  width: 100%;
+  color: #0fa3b1;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.wrapper .dropdown .defaultOption {
+  padding: 13px 15px;
+  font-size: 14px;
+}
+
+.wrapper .dropdown ul {
+  position: absolute;
+  top: 70px;
+  background: #fff;
+  width: 150px;
+  border-radius: 5px;
+  padding: 20px;
+  -webkit-box-shadow: 8px 8px 6px -10px #b3c6ff;
+          box-shadow: 8px 8px 6px -10px #b3c6ff;
+  display: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.wrapper .dropdown ul.active {
+  display: block;
+}
+
+.wrapper .dropdown ul li {
+  padding-bottom: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.wrapper .dropdown ul li:last-child {
+  padding-bottom: 0;
+}
+
+.wrapper .dropdown ul li:hover {
+  color: #235c61;
+}
+
+.wrapper .dropdown ul li label {
+  display: block;
+  cursor: pointer;
+}
+
+.wrapper .dropdown::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  border: 8px solid;
+  border-color: #5078ef transparent transparent transparent;
+  cursor: pointer;
+}
+/*# sourceMappingURL=DropdownSearch.css.map */

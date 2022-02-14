@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    // box-sizing: border-box;
+}
+
+body {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    background: #cee5d0;
+}
+
+
+.searchNav {
+    border-bottom: 1px solid black;
+    form {
+        h4 {
+            margin: 20px;
+            margin-bottom: 0;
+        }
+        .dropdownstyle {
+            position: relative;
+            // display: flex;
+            width: 6em;
+            height: 3em;
+            line-height: 3;
+            background: #f7f2c2;
+            overflow: hidden;
+            border-radius: 0.25em;
+            margin: 20px;
+            // text-align: center;
+            padding: 5px;
+            // letter-spacing: 2px;
+        }
+        .searchBtn {
+            width: 100px;
+            padding: 5px;
+            border: none;
+            background-color: #3c523f;
+            color: #b8ceba;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    }
+}
+
+
+.containerSelf {
+    // position: relative;
+    // width: 1100px;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    flex-wrap: wrap;
+    // padding: 30px;
+    .card {
+        position: relative;
+        // max-width: 300px;
+        // height: 215px;
+        // background: #fff;
+        margin: 30px 20px;
+        padding: 20px 15px;
+        // display: flex;
+        // flex-direction: column;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+        transition: 0.3s ease-in-out;
+        &:hover {
+            // height: 500px;
+            .content {
+                visibility: visible;
+                opacity: 1;
+                margin-top: 20px;
+            }
+        }
+        .imgBox {
+            position: relative;
+            width: auto;
+            height: 25rem;
+            // overflow: hidden;            
+            // top: -60px;
+            // left: 20px;
+            // object-fit: cover;
+            z-index: 1;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 4px;
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 4px;
+                object-fit: cover;
+                overflow: hidden;
+            }
+        }
+        .content {
+            position: relative;
+            margin-top: -140px;
+            padding: 10px 15px;
+            text-align: center;
+            color: #111;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}

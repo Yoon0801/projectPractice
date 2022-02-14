@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <script src="js/jquery-3.6.0.min.js"></script>
 </head>
 
@@ -65,15 +66,40 @@
     <!-- List session -->
     <section class="rescueList">
         <div class="searchNav">
-            123
+
+            <form action="">
+                <h4>案件種類:</h4>
+                <select id="selector" name="selector" class="dropdownstyle">
+                    <option selected="selected" value="請選擇">請選擇</option>
+                    <option value="尋獲">尋獲</option>
+                    <option value="走失">走失</option>
+                    <option value="救援">救援</option>
+                </select>
+                <input type="submit" value="搜尋" class="searchBtn">
+            </form>
+
+
         </div>
-        <div class="box">            
+        <div class="box">
             <div class="ListContent d-flex flex-wrap">
                 <div class="card col-xl-3 col-md-4 col-sm-6 p-3">
+                    <div class="title mb-10 justify-content-between d-flex">
+                        <h2>救援</h2>
+                        <input type="submit" value="追蹤" class="trackBtn">
+                    </div>
+                    <div class="pic mb-10"><img src="img/1.jpg" alt=""></div>
+                    <div class="content mb-10">
+                        <h3 class="position mb-10">台北市大安區</h3>
+                        <p class="event mb-10">狗卡在水溝蓋 收入不大相信，參與。 唯一之一現在固定，的確風格一句電視幸福物品才是新型眼睛大賽情形歷史至少，一直複製青草湖失敗一是自己結果平靜，探索使得這個問題付款教學完善身體美好臨床，經理這是宜蘭隨着住房也可播放，堅決只是資料一直優質例如生日說完親自重大分鐘大部分權益緊張，學科開了並在行。</p>
+                        <p class="time mb-10">2022-12-22</p>
+                    </div>
+                    <a href="#">更多資訊</a>
+                </div>
+                <div class="card col-xl-3 col-md-4 col-sm-6 p-3">
                     <div class="title mb-10">
                         <h2>救援</h2>
                     </div>
-                    <div class="pic mb-10"><img src="img/1.jpg" alt=""></div>
+                    <div class="pic mb-10"><img src="img/2.jpg" alt=""></div>
                     <div class="content mb-10">
                         <h3 class="position mb-10">台北市大安區</h3>
                         <p class="event mb-10">狗卡在水溝蓋</p>
@@ -85,7 +111,7 @@
                     <div class="title mb-10">
                         <h2>救援</h2>
                     </div>
-                    <div class="pic mb-10"><img src="img/1.jpg" alt=""></div>
+                    <div class="pic mb-10"><img src="img/3.jpg" alt=""></div>
                     <div class="content mb-10">
                         <h3 class="position mb-10">台北市大安區</h3>
                         <p class="event mb-10">狗卡在水溝蓋</p>
@@ -97,19 +123,9 @@
                     <div class="title mb-10">
                         <h2>救援</h2>
                     </div>
-                    <div class="pic mb-10"><img src="img/1.jpg" alt=""></div>
-                    <div class="content mb-10">
-                        <h3 class="position mb-10">台北市大安區</h3>
-                        <p class="event mb-10">狗卡在水溝蓋</p>
-                        <p class="time mb-10">2022-12-22</p>
+                    <div class="pic mb-10">
+                        <img src="img/5.jpg" alt="">
                     </div>
-                    <a href="#">更多資訊</a>
-                </div>
-                <div class="card col-xl-3 col-md-4 col-sm-6 p-3">
-                    <div class="title mb-10">
-                        <h2>救援</h2>
-                    </div>
-                    <div class="pic mb-10"><img src="img/1.jpg" alt=""></div>
                     <div class="content mb-10">
                         <h3 class="position mb-10">台北市大安區</h3>
                         <p class="event mb-10">狗卡在水溝蓋</p>
