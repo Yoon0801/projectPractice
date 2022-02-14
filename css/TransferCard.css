@@ -7,10 +7,6 @@ body {
   background: #cee5d0;
 }
 
-.searchNav {
-  border-bottom: 1px solid black;
-}
-
 .searchNav form h4 {
   margin: 20px;
   margin-bottom: 0;
@@ -91,7 +87,12 @@ body {
   transition: 0.3s ease-in-out;
 }
 
+.containerSelf .card .content .position {
+  display: inline-block;
+}
+
 .containerSelf .card .content a {
+  display: block;
   text-decoration: none;
 }
 /*# sourceMappingURL=TransferCard.css.map */

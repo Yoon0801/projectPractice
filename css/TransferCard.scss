@@ -13,7 +13,6 @@ body {
 
 
 .searchNav {
-    border-bottom: 1px solid black;
     form {
         h4 {
             margin: 20px;
@@ -102,7 +101,11 @@ body {
             visibility: hidden;
             opacity: 0;
             transition: 0.3s ease-in-out;
+            .position {
+                display: inline-block;
+            }
             a {
+                display: block;
                 text-decoration: none;
             }
         }

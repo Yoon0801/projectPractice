@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/transferform.css">
+</head>
+<body>
+
+    <div class="transferContainer d-flex align-items-center">
+        <!-- <img src="/img/10.jpg" alt="" class="background"> -->
+        <div class="transferForm">
+            <h1>刊登送養消息</h1>
+            <div class="transferCol">
+                <label for="" class="transferSpecies">送養物種</label>
+                <div class="content">
+                    <!-- @Html.DropDownListFor(m => m.TransferSpecies, (SelectList)ViewBag.Species, "請選擇", new { @class = "text-primary", @id = "Species" }) -->
+                    <select id="TransferSpecies" name="TransferSpecies" style="">
+                        <option selected="selected" value="請選擇">請選擇</option>
+                        <option value="1">狗</option>
+                        <option value="2">貓</option>
+                    </select>
+                </div>
+            </div>
+        
+            <div class="transferCol">
+                <!-- @Html.LabelFor(model => model.TransferName, htmlAttributes: new { @class = "control-label col-md-2" }) -->
+                <label for="" class="transferName">送養動物名字</label>
+                <div class="content">
+                    <!-- @Html.EditorFor(model => model.TransferName, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.TransferName, "", new { @class = "text-danger" }) -->
+                    <input type="text" class="transferName" placeholder="ex小次郎">
+                </div>
+            </div>
+        
+            <div class="transferCol">
+                <!-- @Html.LabelFor(model => model.TransferDone, htmlAttributes: new { @class = "control-label col-md-2" }) -->
+                <label for="" class="TransferDone">案件狀態</label>
+                <div class="content">
+                    <select id="selectorTransferDone" name="selectorTransferDone" >
+                        <option selected="selected" value="請選擇">請選擇</option>
+                        <option value="未結案">未結案</option>
+                        <option value="已結案">已結案</option>
+                    </select>
+                </div>
+            </div>
+        
+            <div class="transferCol">
+                <!-- @Html.LabelFor(model => model.TransferPictures, htmlAttributes: new { @class = "control-label col-md-2" }) -->
+                <label for="" class="TransferPictures">送養照片</label>
+                <div class="content">
+                    <input type="file" name="upImg" value="upImg" id="upImg" class="upImg"/>
+                </div>
+            </div>
+        
+            <div class="transferCol">
+                <!-- @Html.LabelFor(model => model.TransferPositionCity, htmlAttributes: new { @class = "control-label col-md-2" }) -->
+                <label for="">送養地點</label>
+                <div class="content">
+                    <!-- @Html.DropDownListFor(m => m.TransferPositionCity, (IEnumerable<SelectListItem>)ViewBag.City, "請選擇", new { @class = "text-primary", @id = "City" })
+                    <span>@Html.DropDownListFor(m => m.TransferPositionCountry, (IEnumerable<SelectListItem>)ViewBag.Country, "請選擇", new { @class = "text-primary", @id = "Country" })</span>
+                    @Html.ValidationMessageFor(model => model.TransferPositionCity, "", new { @class = "text-danger" })
+                    @Html.ValidationMessageFor(model => model.TransferPositionCountry, "", new { @class = "text-danger" }) -->
+                    <select id="TransferPositionCity" name="TransferPositionCity" >
+                        <option selected="selected" value="請選擇">請選擇</option>
+                        <option value="台北市">台北市</option>
+                        <option value="高雄市">高雄市</option>
+                    </select>
+                    <span>
+                        <select id="TransferPositionCountry" name="TransferPositionCountry" >
+                            <option selected="selected" value="請選擇">請選擇</option>
+                            <option value="台北市">台北市</option>
+                            <option value="高雄市">高雄市</option>
+                        </select>
+                    </span>
+                </div>
+            </div>
+
+            <div class="transferCol">
+                <!-- @Html.LabelFor(model => model.TransferSituation, htmlAttributes: new { @class = "control-label col-md-2" }) -->
+                <label for="" class="">動物現況</label>
+                <div class="content">
+                    <!-- @Html.EditorFor(model => model.TransferSituation, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.TransferSituation, "", new { @class = "text-danger" }) -->
+                    <textarea name="" id="" cols="40" rows="3" placeholder="ex預防針已打，有皮膚病。"></textarea>
+                </div>
+            </div>
+        
+            <div class="transferCol">
+                <!-- @Html.LabelFor(model => model.TransferRequest, htmlAttributes: new { @class = "control-label col-md-2" }) -->
+                <label for="" class="">送養要求</label>
+                <div class="content">
+                    <!-- @Html.EditorFor(model => model.TransferRequest, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.TransferRequest, "", new { @class = "text-danger" }) -->
+                    <textarea name="" id="" cols="40" rows="3" placeholder="成年，經濟獨立。"></textarea>
+                </div>
+            </div>
+        
+            <div class="transferCol">
+                <!-- @Html.LabelFor(model => model.TransferGender, htmlAttributes: new { @class = "control-label col-md-2" }) -->
+                <label for="">動物性別</label>
+                <div class="content">
+                    <!-- @Html.EditorFor(model => model.TransferGender, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.TransferGender, "", new { @class = "text-danger" }) -->
+                    <select id="TransferGender" name="TransferGender">
+                        <option selected="selected" value="請選擇">請選擇</option>
+                        <option value="M">公</option>
+                        <option value="F">母</option>
+                    </select>
+                </div>
+            </div>
+        
+            <div class="transferCol">
+                <!-- @Html.LabelFor(model => model.TransferNeuter, htmlAttributes: new { @class = "control-label col-md-2" }) -->
+                <label for="">結紮沒</label>
+                <div class="content">
+                    <!-- @Html.EditorFor(model => model.TransferNeuter, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.TransferNeuter, "", new { @class = "text-danger" }) -->
+                    <select id="TransferNeuter" name="TransferNeuter">
+                        <option selected="selected" value="請選擇">請選擇</option>
+                        <option value="YES">結了</option>
+                        <option value="NO">給認養人負責</option>
+                    </select>
+                </div>
+            </div>
+        
+            <div class="transferCol">
+                <!-- @Html.LabelFor(model => model.TransferContactPerson, htmlAttributes: new { @class = "control-label col-md-2" }) -->
+                <label for="">聯繫誰</label>
+                <div class="content">
+                    <!-- @Html.EditorFor(model => model.TransferContactPerson, new { htmlAttributes = new { @class = "form-control" } }) -->
+                    <!-- @Html.ValidationMessageFor(model => model.TransferContactPerson, "", new { @class = "text-danger" }) -->
+                    <input type="text" placeholder="ex王先生">
+                </div>
+            </div>
+        
+            <div class="transferCol">
+                <!-- @Html.LabelFor(model => model.TransferContactWay, htmlAttributes: new { @class = "control-label col-md-2" }) -->
+                <label for="">聯繫的方式呢</label>
+                <div class="content">
+                    <!-- @Html.EditorFor(model => model.TransferContactWay, new { htmlAttributes = new { @class = "form-control" } }) -->
+                    <!-- @Html.ValidationMessageFor(model => model.TransferContactWay, "", new { @class = "text-danger" }) -->
+                    <input type="text" placeholder="ex手機：0978178178">
+                </div>
+            </div>
+        
+            <div class="transferCol">
+                <div class="content">
+                    <input type="submit" value="發佈" class="btn btn-warning" />
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>

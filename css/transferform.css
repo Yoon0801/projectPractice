@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.transferContainer {
+  width: 100vw;
+  height: 100%;
+  background-attachment: scroll;
+  background-image: url("../img/6.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.transferContainer .transferForm {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 40rem;
+  height: auto;
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.transferContainer .transferForm .transferCol {
+  margin-bottom: 0.5rem;
+}
+
+.transferContainer .transferForm .transferCol .content select, .transferContainer .transferForm .transferCol .content input, .transferContainer .transferForm .transferCol .content textarea {
+  border-radius: 5px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  padding: 0.3rem;
+}
+
+.transferContainer .transferForm .transferCol .content .btn {
+  margin-top: 1rem;
+  width: 8rem;
+  font-size: 1.2rem;
+  font-weight: 900;
+  padding: 0.5rem;
+}
+
+.transferContainer .transferForm h1 {
+  margin-bottom: 2rem;
+}
+
+@media all and (min-width: 1300px) {
+  .transferContainer .transferForm {
+    margin-left: 5rem;
+    padding: 3rem;
+  }
+}
+/*# sourceMappingURL=Rescueform.css.map */
